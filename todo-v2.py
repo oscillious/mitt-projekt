@@ -81,7 +81,7 @@ class ToDo:
 
 # Instansierar ToDo-klassen
 todo = ToDo()
-todo.ladda_uppgifter('uppgifter.pk1')  # Laddar uppgifter vid start
+todo.ladda_uppgifter('uppgifter.pkl')  # Laddar uppgifter vid start
 
 # Interaktiv meny
 while True:
@@ -128,7 +128,7 @@ while True:
         import time                         # Importerar 'time'-modulen
         for step in track(range(10), description="Sparar..."):      # Skapar en progress bar med rich för visuell effekt.
             time.sleep(0.05)
-        todo.spara_uppgifter('uppgifter.pk1')       # Sparar ToDo-listan med dess uppgifter.
+        todo.spara_uppgifter('uppgifter.pkl')       # Sparar ToDo-listan med dess uppgifter.
         console.print("Uppgifterna har sparats.", style="grey37")
 
     elif val == "6":
@@ -148,7 +148,7 @@ while True:
         import time
         for step in track(range(10), description="Sparar..."):      # Skapar en prograss bar även här eftersom vi sparar.
             time.sleep(0.05)
-        todo.spara_uppgifter('uppgifter.pk1')  # Spara innan avslut.
+        todo.spara_uppgifter('uppgifter.pkl')  # Spara innan avslut.
         console.print("Avslutar programmet.", style="grey37")
         break
 
